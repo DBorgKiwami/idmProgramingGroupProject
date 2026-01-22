@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub MVP - 游戏玩家社区</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav id="navbar" class="hidden">
+        <div class="nav-container">
+            <div class="logo" onclick="app.router('home')">GameHub</div>
+            <div class="nav-links">
+                <span id="current-user-display"></span>
+                <button onclick="app.router('create')">发布新帖</button>
+                <button onclick="app.logout()">退出</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main id="app-container">
+        <!-- 这里的页面内容将由 JavaScript 动态渲染 -->
+    </main>
+
+    <!-- 模态框/提示框容器 -->
+    <div id="modal-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

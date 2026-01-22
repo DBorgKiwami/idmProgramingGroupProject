@@ -1,0 +1,53 @@
+{
+  "games": [
+    { "id": 1, "title": "Elden Ring", "genre": "RPG" },
+    { "id": 2, "title": "Minecraft", "genre": "Sandbox" },
+    { "id": 3, "title": "League of Legends", "genre": "MOBA" },
+    { "id": 4, "title": "Cyberpunk 2077", "genre": "RPG" },
+    { "id": 5, "title": "Genshin Impact", "genre": "Action RPG" },
+    { "id": 6, "title": "Black Myth: Wukong", "genre": "Action RPG" },
+    { "id": 7, "title": "Valorant", "genre": "FPS" }
+  ],
+  "tags": ["攻略", "讨论", "吐槽", "同人", "求助", "新闻"],
+  "users": [
+    { 
+      "id": 1001, 
+      "username": "GameMaster", 
+      "password": "123" 
+    },
+    { 
+      "id": 1002, 
+      "username": "NoobPlayer", 
+      "password": "123" 
+    }
+  ],
+  "posts": [
+    {
+      "id": 2001,
+      "userId": 1001,
+      "gameId": 1,
+      "title": "艾尔登法环新手入门指南",
+      "content": "对于刚接触魂类游戏的玩家，建议先去拿陨石杖...",
+      "tags": ["攻略"],
+      "timestamp": "2023-10-27T10:00:00.000Z"
+    },
+    {
+      "id": 2002,
+      "userId": 1002,
+      "gameId": 2,
+      "title": "有人一起玩生存模式吗？",
+      "content": "建了个新服务器，纯净生存，来的留言。",
+      "tags": ["求助", "讨论"],
+      "timestamp": "2023-10-28T14:30:00.000Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3001,
+      "postId": 2001,
+      "userId": 1002,
+      "content": "太有用了，感谢楼主！",
+      "timestamp": "2023-10-27T10:05:00.000Z"
+    }
+  ]
+}
