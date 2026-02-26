@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Post</title>
+</head>
+<body>
+    <h1>Edit Post</h1>
+    <form action="/posts/<%= post.id %>?_method=PUT" method="POST">
+        <div>
+            <label for="game">Game:</label><br>
+            <input type="text" id="game" name="game" value="<%= post.game %>" required>
+        </div>
+        <br>
+        <div>
+            <label for="postbody">Post Body:</label><br>
+            <textarea id="postbody" name="postbody" rows="5" cols="40" required><%= post.postbody %></textarea>
+        </div>
+        <br>
+        <button type="submit">Update Post</button>
+    </form>
+    <br>
+    <a href="/homepage">Back to Homepage</a>
+</body>
+</html>
