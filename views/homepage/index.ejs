@@ -6,9 +6,19 @@
     </title>
 </head>
 <body>
+<h1>Posts</h1>
+<a href="/posts/new">Create New Post</a>
+<hr>
 <% for (var i = 0; i < popularPosts.length; i++) { %>
-    <p>
-        <%=popularPosts[i].game%>
-    </p>
+    <div>
+        <h3><%= popularPosts[i].game %></h3>
+        <p><%= popularPosts[i].postbody %></p>
+        <a href="/posts/<%= popularPosts[i].id %>/edit">Edit</a>
+        <form action="/posts/<%= popularPosts[i].id %>?_method=DELETE" method="POST" style="display:inline;">
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+    <hr>
 <% } %>
 </body>
+</html>

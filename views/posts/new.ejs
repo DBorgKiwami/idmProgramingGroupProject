@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Post</title>
+</head>
+<body>
+    <h1>Create a New Post</h1>
+    <form action="/posts" method="POST">
+        <div>
+            <label for="game">Game:</label><br>
+            <input type="text" id="game" name="game" required>
+        </div>
+        <br>
+        <div>
+            <label for="postbody">Post Body:</label><br>
+            <textarea id="postbody" name="postbody" rows="5" cols="40" required></textarea>
+        </div>
+        <br>
+        <button type="submit">Create Post</button>
+    </form>
+    <br>
+    <a href="/homepage">Back to Homepage</a>
+</body>
+</html>
